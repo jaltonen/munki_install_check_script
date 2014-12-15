@@ -23,7 +23,7 @@ current_version = plist['CFBundleShortVersionString']
 
 
 # if a higher version or equal version is currently installed the following expression returns false
-#   &#60;  replaces < less than in an xml file because < is a special xml character
+#   &#60;  replaces less than character in an xml file because less than is a special xml character
 install_update = LooseVersion(current_version) &#60; LooseVersion(new_version)
 print install_update
 
